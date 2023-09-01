@@ -1,0 +1,14 @@
+@media(max-width:991.90px){
+  header .nav-wrapper{
+    display: none;
+  }
+  .menu-btn a{
+    display: inline-block;
+  }
+}
+
+@media(max-width:470px){
+  header .template-button{
+    display: none;
+  }
+}

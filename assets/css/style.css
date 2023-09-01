@@ -1,0 +1,225 @@
+/*
+Template Name: Foodest HTML Template
+Author: Clean Heart
+Verson: 1.0.0
+*/
+/*Root Variable*/
+:root{
+  --heading-color:#25292D;
+  --text-color:#666666;
+  --hover-color:#FF6666;
+  --primary-gradient:linear-gradient(275.98deg, #FF6666 52.08%, #FFB23F 100%);
+  --heading-font: 'Lexend', sans-serif;
+  --text-font: 'Barlow', sans-serif;
+  --lily-script: 'Lily Script One', cursive;
+  --header-shadow: 4px 10px 40px rgba(146, 146, 146, 0.1);
+  --section-gradient:linear-gradient(360deg, #FFF2F4 0.12%, #FFF2F4 65.05%, rgba(255, 252, 252, 0) 100%);
+}
+/* Basic Setup*/
+body{
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+h1{
+  font-size: 72px;
+}
+h2{
+  font-size: 36px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-size: 24px;
+}
+h5{
+  font-size: 20px;
+}
+h6{
+  font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6{
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type:none;
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/*****Header Section Style Hare*****/
+
+header{
+  margin-top: 100px;
+}
+header .content-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--header-shadow);
+  background: #fff;
+  padding:5px 25px 5px 15px;
+}
+header .header-right{
+  display: flex;
+  align-items: center;
+}
+header .nav-wrapper ul {
+  display: flex;
+}
+header .nav-wrapper ul li{
+  padding:8px 25px ;
+}
+header .nav-wrapper ul li a{
+  padding: 5px 2px;
+  font-weight: 600;
+  color: #000;
+  text-transform:capitalize;
+  position: relative;
+  transition: 0.3s;
+}
+header .nav-wrapper ul li a:hover{
+  color: var(--hover-color);
+}
+header .nav-wrapper ul li a::before{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: var(--primary-gradient);
+  top: 100%;
+  left: 50%;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+header .nav-wrapper ul li a:hover::before{
+  width: 100%;
+  left:0;
+}
+.template-button{
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 4px;
+  background: var(--primary-gradient);
+  font-family: var(--heading-font);
+  display: inline-block;
+}
+header .template-button{
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 4px;
+  background: var(--primary-gradient);
+  font-family: var(--heading-font);
+  margin-left: 35px;
+  display: inline-block;
+}
+
+/*****Mobile Menu******/
+.menu-btn a{
+  background: transparent;
+  font-size: 25px;
+  margin-left: 15px;
+  display: none;
+}
+
+/*******Header Section End Hare*******/
+
+/************Hero section Start hare*************/
+.hero-area{
+  margin-bottom: 200px;
+  padding-top: 210px;
+  padding-bottom: 147px;
+  background-image: var(--section-gradient);
+}
+.hero-area .content-wrapper{
+  display: flex;
+}
+.hero-area .content-wrapper .hero-left{
+  align-self: center;
+}
+.hero-area .content-wrapper .hero-left h1{
+  max-width: 785px;
+}
+.hero-area .content-wrapper .hero-left h1 span{
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-area .content-wrapper .hero-left p{
+  max-width: 555px;
+  font-weight: 400;
+  margin-top: 35px;
+  margin-bottom: 33px;
+}
+.hero-left .btn-wrapper{
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.hero-left .popup-btn{
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  margin-left: 50px;
+}
+.hero-left .border-gradient{
+  width: 50px;
+  height: 50px;
+  background:var(--primary-gradient);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 21px;
+  padding: 2px;
+}
+.hero-left .border-gradient .icon{
+  background: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.hero-right{
+  position: relative;
+  z-index: 1;
+}
+.hero-right img{
+  max-width: initial;
+  position: absolute;
+  bottom: -147px;
+  left: 40px;
+}
+.hero-right .image-shape{
+  width: 431px;
+  height: 430px;
+  background: var(--primary-gradient);
+  display: inline-block;
+  border-radius: 30px 0px 30px 239px;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 35px;
+  bottom: -139px;
+  z-index: -1;
+}
+/************Hero section End hare*************/
