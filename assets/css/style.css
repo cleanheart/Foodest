@@ -14,6 +14,10 @@ Verson: 1.0.0
   --lily-script: 'Lily Script One', cursive;
   --header-shadow: 4px 10px 40px rgba(146, 146, 146, 0.1);
   --section-gradient:linear-gradient(360deg, #FFF2F4 0.12%, #FFF2F4 65.05%, rgba(255, 252, 252, 0) 100%);
+  --food-items-bg:linear-gradient(275.98deg, rgba(248, 97, 97, 0.1) 0%, rgba(255, 178, 63, 0.1) 100%);
+  --items-box-shadow:4px 10px 30px rgba(107, 107, 107, 0.05);
+  --items-hover-shadow:10px 15px 40px rgba(152, 152, 152, 0.2);
+  --primary-color-shadow: -5px 0px 15px rgba(248, 97, 97, 0.3);
 }
 /* Basic Setup*/
 body{
@@ -56,15 +60,13 @@ li{
   list-style-type:none;
 }
 .container{
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*****Header Section Style Hare*****/
 
-header{
-  margin-top: 100px;
-}
 header .content-wrapper{
   display: flex;
   align-items: center;
@@ -145,10 +147,10 @@ header .template-button{
 
 /************Hero section Start hare*************/
 .hero-area{
-  margin-bottom: 200px;
   padding-top: 210px;
   padding-bottom: 147px;
   background-image: var(--section-gradient);
+  overflow: hidden;
 }
 .hero-area .content-wrapper{
   display: flex;
@@ -159,7 +161,8 @@ header .template-button{
 .hero-area .content-wrapper .hero-left h1{
   max-width: 785px;
 }
-.hero-area .content-wrapper .hero-left h1 span{
+
+.gradient-text{
   background: var(--primary-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -223,3 +226,79 @@ header .template-button{
   z-index: -1;
 }
 /************Hero section End hare*************/
+
+/********* Category Section Start **********/
+.category-area{
+  padding: 119px 0px;
+  margin-bottom: 200px;
+}
+.category-area .food-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-area .title-wrapper{
+  max-width: 619px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.category-area .inner{
+  text-align: center;
+  padding: 30px 51px 39px 45px;
+  border-radius: 4px;
+  box-shadow: var(--items-box-shadow);
+  transition: 0.3s;
+  position: relative;
+}
+.category-area .inner:hover{
+  box-shadow: var(--items-hover-shadow);
+}
+.category-area .inner:hover a{
+  opacity: 1;
+  visibility: visible;
+}
+.category-area .inner:hover .icon{
+  background: var(--primary-gradient);
+}
+.category-area .inner:hover .icon .icon-show{
+  display: none;
+}
+.category-area .inner:hover .icon .icon-hide{
+  display: inline-block;
+}
+
+.category-area .icon{
+  background: var(--food-items-bg);
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 19px;
+  transition: 0.3s;
+}
+.category-area .icon .icon-hide{
+  display: none;
+  transition: 0.3s;
+}
+.category-area a{
+  width: 35px;
+  height: 35px;
+  background: var(--primary-gradient);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: var(--primary-color-shadow);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+/********* Category Section End **********/

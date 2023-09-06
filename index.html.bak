@@ -58,7 +58,7 @@
     <div class="container">
       <div class="content-wrapper">
         <div class="hero-left">
-          <h1> <span class="gradient-text">Laughter</span> is Brightest Where food is best.</h1>
+          <h1> <span>Laughter</span> is Brightest Where food is best.</h1>
           <p>We welcome you to a delicious feast of exquisite dishes in Artichaut.With a wide range of world cuisines .</p>
           <div class="btn-wrapper">
             <a class="template-button" href="#">order now</a>
@@ -87,66 +87,5 @@
     </div>
   </section>
   <!--Hero Section End Hare-->
-
-  <!--Category Section Start-->
-  <section class="category-area">
-    <div class="container">
-      <div class="title-wrapper">
-        <h2>Our Awesome <span class="gradient-text">Category</span> </h2>
-        <p> nisl scelerisque quisque eget. Malesuada arcu aliquam tempor pulvinar pulvinar ac lectus. Turpis vitae, euismod facilisis non lacus erat malesuada dolor dignissim.</p>
-      </div>
-      <div class="food-list">
-        <div class="inner">
-          <div class="icon">
-            <img class="icon-show" src="assets/Images/cetagory-icons/pizza.png" alt="Pizza">
-            <img class="icon-hide" src="assets/Images/cetagory-icons/pizza-white.png" alt="Pizza">
-          </div>
-          <h5>Pizza</h5>
-          <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-        </div>
-        <div class="inner">
-          <div class="icon">
-            <img src="assets/Images/cetagory-icons/pizza.png" alt="Pizza">
-          </div>
-          <h5>Pizza</h5>
-          <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-        </div>
-        <div class="inner">
-          <div class="icon">
-            <img src="assets/Images/cetagory-icons/pizza.png" alt="Pizza">
-          </div>
-          <h5>Pizza</h5>
-          <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-        </div>
-        <div class="inner">
-          <div class="icon">
-            <img src="assets/Images/cetagory-icons/pizza.png" alt="Pizza">
-          </div>
-          <h5>Pizza</h5>
-          <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-        </div>
-        <div class="inner">
-          <div class="icon">
-            <img src="assets/Images/cetagory-icons/pizza.png" alt="Pizza">
-          </div>
-          <h5>Pizza</h5>
-          <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-        </div>
-        <div class="inner">
-          <div class="icon">
-            <img src="assets/Images/cetagory-icons/pizza.png" alt="Pizza">
-          </div>
-          <h5>Pizza</h5>
-          <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Category Section End-->
-
-
-  <!--assential js File-->
-    <script src="assets/js/all.js"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
