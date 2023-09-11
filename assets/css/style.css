@@ -18,6 +18,9 @@ Verson: 1.0.0
   --items-box-shadow:4px 10px 30px rgba(107, 107, 107, 0.05);
   --items-hover-shadow:10px 15px 40px rgba(152, 152, 152, 0.2);
   --primary-color-shadow: -5px 0px 15px rgba(248, 97, 97, 0.3);
+  --lily-text-bg:linear-gradient(275.98deg, rgba(248, 97, 97, 0.1) 0%, rgba(255, 178, 63, 0.1) 100%);
+  --box-2-shadow:0px 10px 40px rgba(0, 0, 0, 0.05);
+  --box2-hover-shadow:0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 /* Basic Setup*/
 body{
@@ -212,6 +215,7 @@ header .template-button{
   position: absolute;
   bottom: -147px;
   left: 40px;
+  opacity: 0.1%;
 }
 .hero-right .image-shape{
   width: 431px;
@@ -230,12 +234,19 @@ header .template-button{
 /********* Category Section Start **********/
 .category-area{
   padding: 119px 0px;
-  margin-bottom: 200px;
+  position: relative;
+}
+.category-area .shape{
+  position: absolute;
+  left: 7%;
+  bottom: 5%;
+  z-index: -2;
 }
 .category-area .food-list{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .category-area .title-wrapper{
   max-width: 619px;
@@ -244,9 +255,15 @@ header .template-button{
   margin-bottom: 50px;
 }
 .category-area .inner{
-  text-align: center;
-  padding: 30px 51px 39px 45px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 188px;
   border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 25px;
   box-shadow: var(--items-box-shadow);
   transition: 0.3s;
   position: relative;
@@ -257,17 +274,19 @@ header .template-button{
 .category-area .inner:hover a{
   opacity: 1;
   visibility: visible;
-}
-.category-area .inner:hover .icon{
-  background: var(--primary-gradient);
-}
-.category-area .inner:hover .icon .icon-show{
-  display: none;
-}
-.category-area .inner:hover .icon .icon-hide{
-  display: inline-block;
+  bottom: -18px;
 }
 
+.category-area .inner:hover .icon-primary{
+  transform: scale(0);
+}
+.category-area .inner:hover .icon-white{
+  transform: translate(-50%, -50%) scale(1);
+
+}
+.category-area .inner:hover .icon::after{
+  opacity: 1;
+}
 .category-area .icon{
   background: var(--food-items-bg);
   width: 74px;
@@ -278,10 +297,30 @@ header .template-button{
   align-items: center;
   margin-bottom: 19px;
   transition: 0.3s;
+  position: relative;
 }
-.category-area .icon .icon-hide{
-  display: none;
+.category-area .inner .active{
+  background: var(--primary-gradient);
+}
+.category-area .inner .icon::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--primary-gradient);
+  border-radius: 50%;
+  opacity: 0;
   transition: 0.3s;
+  z-index: -1;
+}
+.category-area .icon img{
+  transition: 0.3s;
+}
+.category-area .icon .icon-white{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
 }
 .category-area a{
   width: 35px;
@@ -294,7 +333,7 @@ header .template-button{
   box-shadow: var(--primary-color-shadow);
   border-radius: 50%;
   position: absolute;
-  bottom: -18px;
+  bottom: -23px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -302,3 +341,77 @@ header .template-button{
   transition: 0.3s;
 }
 /********* Category Section End **********/
+
+
+/********* About section start hare **********/
+.about-area{
+  position: relative;
+  padding-bottom: 50px;
+}
+.about-area .content-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.about-area .shape{
+  position: absolute;
+  right: 13%;
+  bottom: 25px;
+  z-index:-1;
+}
+.about-area .left{
+  max-width: 50%;
+}
+.about-area .sub-title{
+  background-image: var(--lily-text-bg);
+  display: inline;
+  padding: 4px 20px;
+  border-radius: 5px;
+}
+.about-area .sub-title span{
+  font-size: 20px;
+  font-family: var(--lily-script);
+  display: inline-block;
+}
+.about-area .title{
+  max-width: 504px;
+  margin: 25px 0 40px 0;
+}
+.about-area .description{
+  max-width: 556px;
+  margin-bottom: 30px;
+}
+.about-right-bottom .inner{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  box-shadow: var(--box-2-shadow);
+  transition: 0.3s;
+  padding: 15px 49px 18px 20px;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.about-right-bottom .inner:hover{
+  box-shadow: var(--box2-hover-shadow);
+  
+}
+.about-right-bottom .icon span{
+  width: 25px;
+  height: 25px;
+  background: var(--primary-gradient);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.about-right-bottom .text span{
+  font-size: 15px;
+  margin-top: 9px;
+}
+.about-button{
+  margin-top: 50px;
+}
+/********* About section End hare **********/
