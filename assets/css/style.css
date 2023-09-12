@@ -21,6 +21,7 @@ Verson: 1.0.0
   --lily-text-bg:linear-gradient(275.98deg, rgba(248, 97, 97, 0.1) 0%, rgba(255, 178, 63, 0.1) 100%);
   --box-2-shadow:0px 10px 40px rgba(0, 0, 0, 0.05);
   --box2-hover-shadow:0px 15px 40px rgba(0, 0, 0, 0.1);
+  --section-bg:#FFF2F4;
 }
 /* Basic Setup*/
 body{
@@ -415,3 +416,91 @@ header .template-button{
   margin-top: 50px;
 }
 /********* About section End hare **********/
+
+/********* Wcs Section Start hare **********/
+.wcs-area{
+  padding: 135px 0 97px 0;
+}
+.wcs-area .content-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.wcs-area .left{
+  max-width: 577px;
+}
+.wcs-area .sub-title{
+  background-image: var(--lily-text-bg);
+  display: inline;
+  padding: 4px 20px;
+  border-radius: 5px;
+}
+.wcs-area .sub-title span{
+  font-size: 20px;
+  font-family: var(--lily-script);
+  display: inline-block;
+}
+.wcs-area .title{
+  margin: 33px 0 25px 0;
+}
+.wcs-area .description{
+  margin-bottom: 27px;
+}
+.wcs-left-bottom .inner{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 22px 27px 12px 13px;
+  border-radius: 5px;
+  box-shadow: var(--box-2-shadow);
+  transition: 0.3s;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.wcs-left-bottom .inner:hover{
+  box-shadow: var(--box2-hover-shadow);
+}
+.wcs-left-bottom .inner .icon{
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-image: var(--food-items-bg);
+  flex-shrink: 0;
+}
+.wcs-left-bottom .text h6{
+  margin-bottom: 10px;
+}
+/********* Wcs Section End hare **********/
+
+/********* Food Items Setion Start Hare **********/
+.food-items-area{
+  padding: 100px 0 131px 0;
+  background: var(--section-bg);
+}
+.food-items-area .title-wrapper{
+  max-width: 585px;
+  margin: 0 auto;
+  text-align: center;
+}
+.food-items-area .title-wrapper .title{
+  margin: 25px 0;
+}
+.food-items-area .sub-title{
+  background-image: var(--lily-text-bg);
+  display: inline;
+  padding: 4px 20px;
+  border-radius: 5px;
+}
+.food-items-area .sub-title span{
+  font-size: 20px;
+  font-family: var(--lily-script);
+  display: inline-block;
+}
+.food-items-area .title-wrapper .description p{
+  margin: 0;
+  padding: 0;
+}
+/********* Food Items Setion End Hare **********/
