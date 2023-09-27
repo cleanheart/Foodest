@@ -8,6 +8,10 @@ Verson: 1.0.0
   --heading-color:#25292D;
   --text-color:#666666;
   --hover-color:#FF6666;
+  --icon-color:#FFB23F;
+  --img-drop-shadow:(0px 4px 20px rgba(248, 97, 97, 0.2))
+  --icon-shadow:5px 4px 15px rgba(248, 97, 97, 0.3);
+  --primary-color:#F86161;
   --primary-gradient:linear-gradient(275.98deg, #FF6666 52.08%, #FFB23F 100%);
   --heading-font: 'Lexend', sans-serif;
   --text-font: 'Barlow', sans-serif;
@@ -216,7 +220,6 @@ header .template-button{
   position: absolute;
   bottom: -147px;
   left: 40px;
-  opacity: 0.1%;
 }
 .hero-right .image-shape{
   width: 431px;
@@ -241,7 +244,7 @@ header .template-button{
   position: absolute;
   left: 7%;
   bottom: 5%;
-  z-index: -2;
+  z-index: -1;
 }
 .category-area .food-list{
   display: flex;
@@ -268,6 +271,7 @@ header .template-button{
   box-shadow: var(--items-box-shadow);
   transition: 0.3s;
   position: relative;
+  z-index: 1;
 }
 .category-area .inner:hover{
   box-shadow: var(--items-hover-shadow);
@@ -355,12 +359,7 @@ header .template-button{
   justify-content: space-between;
   gap: 50px;
 }
-.about-area .shape{
-  position: absolute;
-  right: 13%;
-  bottom: 25px;
-  z-index:-1;
-}
+
 .about-area .left{
   max-width: 50%;
 }
@@ -503,4 +502,75 @@ header .template-button{
   margin: 0;
   padding: 0;
 }
+.food-items-area .card-wrapper{
+  display: flex;
+  align-items: center;
+}
+.food-items-area .card-inner{
+  background: #fff;
+  max-width: 270px;
+  padding: 26px 26px 26px 21px;
+  border-radius:10px;
+}
+.food-items-area .card-inner .img-wrapper{
+  text-align: center;
+}
+.food-items-area .card-inner .img-wrapper img{
+  filter: drop-shadow(0px 4px 20px rgba(248, 97, 97, 0.2));
+}
+.food-items-area .card-title{
+  margin: 26px 0 16px 0;
+}
+.food-items-area .meta-text{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.food-items-area .meta-text .ratting{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.food-items-area .meta-text .ratting .icon{
+  color: var(--icon-color);
+}
+.food-items-area .meta-text .ratting-point{
+  font-family: var(--heading-font);
+  font-weight: 500;
+  color: var(--heading-color);
+
+}
+.food-items-area .meta-text .delivery-time{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--heading-color);
+}
+.food-items-area .delivery-time .clock{
+  font-size: 12px;
+}
+.food-items-area .delivery-time .clock-text{
+  font-weight: 500;
+}
+.food-items-area .card-bottom{
+  display: flex;
+}
+.food-items-area .card-bottom .pricing{
+  display: flex;
+  align-items: center;  
+  font-weight: 700;
+  color: var(--heading-color);
+  padding-right: 59px;
+  align-self: flex-end;
+}
+.food-items-area .card-bottom .pricing del{
+  color: var(--primary-color);
+  padding-right: 11px;
+}
+.food-items-area .icon .template-button{
+  padding: 6px 8px;
+  box-shadow: var(--icon-shadow);
+}
+
 /********* Food Items Setion End Hare **********/

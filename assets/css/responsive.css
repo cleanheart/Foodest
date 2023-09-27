@@ -70,6 +70,9 @@
   .hero-area .content-wrapper .hero-left h1{
     font-size: 60px;
   }
+  .category-area .inner{
+    width: 30%;
+  }
   .hero-right img{
     width: 100%;
     left: 0;
@@ -128,6 +131,9 @@
   .category-area .title-wrapper h2{
     font-size: 30px;
   }
+  .category-area .inner{
+    width: 47%;
+  }
   .wcs-left-bottom .inner{
     gap: 15px;
   }
@@ -139,5 +145,8 @@
   }
   .category-area .title-wrapper h2 {
     font-size: 27px;
+  }
+  .category-area .inner{
+    width: 100%;
   }
 }
