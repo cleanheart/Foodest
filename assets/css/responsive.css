@@ -54,6 +54,7 @@
   .hero-right .image-shape{
     left: -43px;
   }
+
 }
 @media(max-width:991.90px){
   header .nav-wrapper{
@@ -106,13 +107,36 @@
   .wcs-area .left{
     max-width: 100%;
   }
-
-
-
+  .offer-area .content-wrapper{
+    gap: 5px;
+  }
+} 
+@media (max-width:850px){
+  .food-items-area .card-inner:nth-child(even){
+    margin-left: 30px;
+  } 
+  .food-items-area .card-inner{
+    width: calc(50% - 75px);
+  }
+  .offer-area .content-wrapper{
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 30px;
+  }
+  .offer-area .offer-details{
+    width: 100%;
+  }
+  .offer-area .offer-img{
+    width: 100%;
+  }
 }
+
 @media(max-width:768px){
   .hero-area .content-wrapper .hero-left h1{
     font-size: 50px;
+  }
+  .food-items-area .card-inner{
+    width: calc(50% - 63px); 
   }
 }
 @media(max-width:575.90px){
@@ -137,9 +161,16 @@
   .wcs-left-bottom .inner{
     gap: 15px;
   }
+  .food-items-area .card-inner:nth-child(even){
+    margin-left: 30px;
+  }
+  .food-items-area .card-inner{
+    width: 100%; 
+    margin: 20px 30px;
+  }
 
 }
-@media(max-width:470px){
+@media (max-width:470px){
   header .template-button{
     display: none;
   }
@@ -148,5 +179,8 @@
   }
   .category-area .inner{
     width: 100%;
+  }
+  .offer-area .content-wrapper{
+    margin: 0 0px;
   }
 }

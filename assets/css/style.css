@@ -53,6 +53,7 @@ h6{
   font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6{
+  font-weight: 700;
   color: var(--heading-color);
   font-family: var(--heading-font);
   margin: 0;
@@ -488,7 +489,7 @@ header .template-button{
   margin: 25px 0;
 }
 .food-items-area .sub-title{
-  background-image: var(--lily-text-bg);
+  background: var(--lily-text-bg);
   display: inline;
   padding: 4px 20px;
   border-radius: 5px;
@@ -503,14 +504,21 @@ header .template-button{
   padding: 0;
 }
 .food-items-area .card-wrapper{
+  margin-top: 50px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .food-items-area .card-inner{
   background: #fff;
-  max-width: 270px;
   padding: 26px 26px 26px 21px;
   border-radius:10px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.food-items-area .card-inner:hover{
+  filter: drop-shadow(0px 5px 30px rgba(248, 97, 97, 0.2));
 }
 .food-items-area .card-inner .img-wrapper{
   text-align: center;
@@ -520,6 +528,7 @@ header .template-button{
 }
 .food-items-area .card-title{
   margin: 26px 0 16px 0;
+  text-transform: capitalize;
 }
 .food-items-area .meta-text{
   display: flex;
@@ -574,3 +583,51 @@ header .template-button{
 }
 
 /********* Food Items Setion End Hare **********/
+
+/********* Offer Section Start Hare **********/
+.offer-area{
+  padding: 120px 0;
+  background: #fff;
+}
+.offer-area .content-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.offer-area .offer-details{
+  width: 50%;
+}
+.offer-area .offer-img{
+  width: 50%;
+}
+.offer-area .sub-title{
+  background: var(--lily-text-bg);
+  display: inline;
+  padding: 4px 20px;
+  border-radius: 5px;
+}
+.offer-area .sub-title span{
+  font-size: 20px;
+  font-family: var(--lily-script);
+  display: inline-block;
+}
+.offer-area .title{
+  margin: 30px 0 25px 0;
+}
+.offer-area .timing-wrapper{
+  font-family: var(--lily-script);
+  display: flex;
+  align-items: center;
+  gap: 43px;
+  margin: 40px 0 42px 0;
+}
+.offer-area .timing-wrapper h2{
+  font-family: var(--lily-script);
+  font-weight: 400;
+}
+.offer-area .timing-wrapper span{
+  font-size: 20px;
+  color: var(--primary-color);
+}
+/********* Offer Section End Hare **********/
+
