@@ -110,6 +110,13 @@
   .offer-area .content-wrapper{
     gap: 5px;
   }
+  .team-area .member-row{
+    flex-wrap: wrap;
+  }
+  .member-row .inner{
+    width: calc(50% - 30px);
+  }
+
 } 
 @media (max-width:850px){
   .food-items-area .card-inner:nth-child(even){
@@ -138,6 +145,8 @@
   .food-items-area .card-inner{
     width: calc(50% - 63px); 
   }
+  
+
 }
 @media(max-width:575.90px){
   h2{
@@ -182,5 +191,8 @@
   }
   .offer-area .content-wrapper{
     margin: 0 0px;
+  }
+  .member-row .inner{
+    width: calc(100% - 30px);
   }
 }
