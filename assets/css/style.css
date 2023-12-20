@@ -691,11 +691,11 @@ header .template-button{
   margin-top: 7px;
   font-weight: 500;
 }
-.team-area .cart-btn{
-  align-self: self-end;
+.plus-cart-btn{
+  align-self:end;
   padding: 0 11px 9px 0;
 }
-.team-area a{
+.plus-cart-btn a{
   width: 31px;
   height: 31px;
   display: inline-flex;
@@ -708,4 +708,132 @@ header .template-button{
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /********* Team Member Section End Hare **********/
+
+/********* Testimonial Section Start Hare **********/
+.testimonial-area{
+  padding: 120px 0;
+}
+.testimonial-area .title-wrapper{
+  max-width: 570px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonial-area .clients-comments{
+  margin-top: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.testimonial-area .inner{
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 10px 15px 40px rgba(196, 196, 196, 0.2);
+  border-radius: 4px;
+  max-width: 570px;
+  text-align: center;
+  position: relative;
+  padding: 75px 31px 42px 41px;
+}
+.testimonial-area .inner h6{
+  font-weight: 600;
+}
+.testimonial-area .inner img{
+  position: absolute;
+  max-width: 90px;
+  left: 50%;
+  top: -45px;
+  transform: translateX(-50%);
+}
+.testimonial-area .inner span{
+  margin: 7px 0 7px 0;
+  display: inline-block;
+}
+.testimonial-area .inner p{
+  color: #666666;
+}
+/********* Testimonial Section End Hare **********/
+
+/********* Blog Section Start Hare **********/
+.blog-area{
+  padding-bottom: 120px;
+}
+.blog-area .title-wrapper{
+  max-width: 570px;
+}
+.blog-area .top-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blog-area .top-content .btn{
+  align-self: end;
+}
+.blog-area .blog-content{
+  margin-top: 50px;
+  display: flex;
+  gap: 35px;
+}
+.blog-single-card{
+  max-width: 570px;
+}
+.blog-single-card:hover .plus-cart-btn{
+  bottom: -25px;
+  opacity: 1;
+  visibility: visible;
+}
+.blog-single-card img{
+  background: #C4C4C4;
+  border-radius: 10px;
+  z-index: -1;
+  transition: 0.3s;
+}
+.blog-single-card .card-content{
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  margin-top: -25px;
+  max-width: 90.90%;
+  box-sizing: border-box;
+  padding: 20px 27px 20px 23px;
+  background: #fff;
+  box-shadow: 10px 15px 40px rgba(196, 196, 196, 0.2);
+  border-radius: 4px;
+}
+.blog-single-card .card-content .meta-text{
+  margin-bottom: 18px;
+}
+.blog-single-card .card-content .meta-text span{
+  font-weight: 500;
+  color: var(--heading-color);
+}
+.card-content .meta-text span i{
+  margin-right: 5px;
+  display: inline-block;
+}
+.blog-single-card .card-content .meta-text span:first-child{
+  margin-right: 25px;
+}
+.blog-single-card .card-content h5{
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+.blog-area .plus-cart-btn{
+  position: absolute;
+  bottom: -20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  right: 13px;
+}
+.bottom-btn{
+  text-align: right;
+  margin-top: 20px;
+  /* display: none; */
+}
+/********* Blog Section End Hare **********/
 

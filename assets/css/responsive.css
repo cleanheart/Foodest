@@ -136,6 +136,20 @@
   .offer-area .offer-img{
     width: 100%;
   }
+  .blog-area .top-content .btn{
+    display: none;
+  }
+  .bottom-btn{
+    display: inline-block;
+    text-align: right;
+    margin-top: 20px;
+  }
+  .blog-area .blog-content{
+    flex-wrap: wrap;
+  }
+  .blog-single-card{
+    max-width: 100%;
+  } 
 }
 
 @media(max-width:768px){
@@ -177,7 +191,14 @@
     width: 100%; 
     margin: 20px 30px;
   }
-
+  .testimonial-area .clients-comments{
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  .testimonial-area .inner{
+    max-width: 100%;
+  }
+   
 }
 @media (max-width:470px){
   header .template-button{
