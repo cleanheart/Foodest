@@ -1,3 +1,5 @@
+
+
 @media(max-width:1500px){
   .hero-area{
     padding-top: 47px;
@@ -18,7 +20,9 @@
     bottom: -17px;
     width: 371px;
     height: 370px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 
 }
@@ -35,7 +39,9 @@
     bottom: -19px;
     width: 351px;
     height: 350px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .about-area .content-wrapper{
     gap: 10px;
@@ -65,8 +71,13 @@
   }
   /***** Hero Area ********/
   .hero-area .content-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .hero-area .content-wrapper .hero-left h1{
     font-size: 60px;
@@ -83,13 +94,18 @@
     height: 50%;
     left: 12%;
     bottom: -1%;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .category-area .shape{
     display: none;
   }
   .about-area .content-wrapper {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .about-area .left {
     max-width: 100%;
@@ -102,7 +118,10 @@
     max-width: 504px;
   }
   .wcs-area .content-wrapper{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .wcs-area .left{
     max-width: 100%;
@@ -111,12 +130,15 @@
     gap: 5px;
   }
   .team-area .member-row{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .member-row .inner{
     width: calc(50% - 30px);
   }
-
+  .footer-area .shape-2{
+    display:none;
+  }
 } 
 @media (max-width:850px){
   .food-items-area .card-inner:nth-child(even){
@@ -127,7 +149,8 @@
   }
   .offer-area .content-wrapper{
     gap: 20px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 30px;
   }
   .offer-area .offer-details{
@@ -136,16 +159,20 @@
   .offer-area .offer-img{
     width: 100%;
   }
+  .blog-area .title-wrapper{
+    text-align: center;
+    margin: 0 auto;
+  }  
   .blog-area .top-content .btn{
     display: none;
   }
   .bottom-btn{
-    display: inline-block;
-    text-align: right;
-    margin-top: 20px;
+    opacity: 1;
+    visibility: visible;
   }
   .blog-area .blog-content{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .blog-single-card{
     max-width: 100%;
@@ -181,6 +208,9 @@
   .category-area .inner{
     width: 47%;
   }
+  .wcs-area{
+    padding: 50px 0 97px 0;
+  }
   .wcs-left-bottom .inner{
     gap: 15px;
   }
@@ -192,13 +222,16 @@
     margin: 20px 30px;
   }
   .testimonial-area .clients-comments{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 100px;
   }
   .testimonial-area .inner{
     max-width: 100%;
   }
-   
+  .footer-area .menu-wrapper ul li+ li{
+    padding-left: 25px;
+  }
 }
 @media (max-width:470px){
   header .template-button{
